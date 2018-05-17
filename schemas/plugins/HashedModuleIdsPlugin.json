@@ -2,6 +2,11 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
+    "context": {
+      "description": "The context of the module for the id normalization. If not provided, 'compiler.options.context' is used instead",
+      "type": "string",
+      "minLength": 1
+    },
     "hashFunction": {
       "description": "The hashing algorithm to use, defaults to 'md5'. All functions from Node.JS' crypto.createHash are supported.",
       "type": "string",
